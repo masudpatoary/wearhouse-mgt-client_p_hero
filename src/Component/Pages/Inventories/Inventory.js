@@ -12,23 +12,23 @@ const Inventory = (props) => {
         console.log(id)
     }
     return (
-        <div className='col-12 d-md-flex border border-secondary my-2 px-2 py-1 '>
-            <div className='col-md-3 col-sm-12 border py-1 px-2 mx-1'>
+        <div className='col-12 d-md-flex border border-secondary my-2 px-2 py-1 text-start'>
+            <div className='col-md-3 col-sm-12 border py-1 px-2 mx-1 d-flex  align-items-center'>
                 <img src={img} alt="" className='w-25' />
             </div>
-            <div className='col-md-2 col-sm-12 border py-1 px-2 mx-1'>
+            <div className='col-md-2 col-sm-12 border py-1 px-2 mx-1 d-flex  align-items-center'>
                 <p>{name}</p>
             </div>
-            <div className='col-md-1 col-sm-12 border py-1 px-2 mx-1'>
+            <div className='col-md-1 col-sm-12 border py-1 px-2 mx-1 d-flex  align-items-center'>
                 <p>{price}</p>
             </div>
-            <div className='col-md-1 col-sm-12 border py-1 px-2 mx-1'>
+            <div className='col-md-1 col-sm-12 border py-1 px-2 mx-1 d-flex  align-items-center'>
                 <p>{quantity}</p>
             </div>
-            <div className='col-md-2 col-sm-12 border py-1 px-2 mx-1'>
+            <div className='col-md-2 col-sm-12 border py-1 px-2 mx-1 d-flex  align-items-center'>
                 <p>{supplier}</p>
             </div>
-            <div className='col-md-1 col-sm-12  py-1 px-2 mx-1'>
+            <div className='col-md-1 col-sm-12 py-1 px-2 mx-1 d-flex  align-items-center'>
                 <Button onClick={() => showInventoryDetail(id)}>Details</Button>
             </div>
         </div>

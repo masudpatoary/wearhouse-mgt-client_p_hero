@@ -9,8 +9,8 @@ const Inventories = () => {
 
     return (
         <div>
-            <h1 className='tect-center fw-bold'>All Inventories</h1>
-            <Link to='/addnewinventoryitem' className='text-end'><Button>Add New Item</Button></Link>
+            <h1 className='tect-center fw-bold my-2'>Inventories of Rolls Parts</h1>
+            <Link to='/addnewinventoryitem' className='text-end'><Button variant="outline-dark">Add New Item</Button></Link>
             <div className='w-100 p-md-5 p-sm-2 '>
                 {
                     inventories.map(inventory => <Inventory
