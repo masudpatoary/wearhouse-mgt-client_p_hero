@@ -19,30 +19,19 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto" variant="pills" defaultActiveKey="/home">
-              <Nav.Link eventKey="link-1" as={Link} to="home">Home</Nav.Link>
+              <Nav.Link eventKey="link-1" as={Link} to="home" className="ms-md-3 my-1">Home</Nav.Link>
 
               {
                 user ?
                   <>
-                    <Nav.Link eventKey="link-2" as={Link} to="inventories">Inventories</Nav.Link>
-                    <Nav.Link eventKey="link-3" as={Link} to="abc">abc</Nav.Link>
+                    <Nav.Link eventKey="link-2" as={Link} to="inventories" className=" my-1">Inventories</Nav.Link>
+                    <Nav.Link eventKey="link-3" as={Link} to="addinventory" className=" my-1">Add Inventory</Nav.Link>
+                    <Button eventKey="link-4" onClick={handleSignOut} variant="outline-primary" className=" ms-md-3 my-1">Log Out</Button>
                   </>
-                  :
-                  <>
-                    
-                  </>
-
-              }
-
-              {
-                user ?
-                  <Button onClick={handleSignOut} variant={'primary'} className="ms-3">Log Out</Button>
-                  :
-                  <>
-                    <Nav.Link eventKey="link-3" as={Link} to="login">Log In</Nav.Link>
-                    <Nav.Link eventKey="link-2" as={Link} to="register">Register</Nav.Link>
-                  </>
-
+                  : <>
+                  <Nav.Link eventKey="link-3" as={Link} to="login" className=" my-1">Log In</Nav.Link>
+                  <Nav.Link eventKey="link-2" as={Link} to="register" className=" my-1">Register</Nav.Link>
+                </>
               }
             </Nav>
           </Navbar.Collapse>

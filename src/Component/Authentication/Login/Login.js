@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { FcGoogle } from 'react-icons/fc';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
@@ -64,10 +64,11 @@ const Login = () => {
                         type="button"
                         value="Log In" />
                 </form>
-                <div className='mt-4 d-flex justify-content-center align-items-center'>
+                <p className='mt-2'>Dont have an account? <Link to={'/register'}>Register</Link></p>
+                <div className='mt-2 d-flex justify-content-center align-items-center'>
                     <div className="  w-100	border-top border-1 border-dark"></div>
                     <div className="mx-1 fs-6 fw-bold pb-1">or</div>
-                    <div className="  w-100	border-top border-2 border-dark"></div>
+                    <div className="  w-100	border-top border-1 border-dark"></div>
                 </div>
                 <Button
                     onClick={() => signInWithGoogle()}
