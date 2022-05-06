@@ -6,6 +6,8 @@ import Register from './Component/Authentication/Register/Register';
 import Login from './Component/Authentication/Login/Login';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Inventories from './Component/Pages/Inventories/Inventories';
+import InventoryDetail from './Component/Pages/Inventories/InventoryDetail';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path='/home' element={<HomePage></HomePage>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/inventories' element={<Inventories></Inventories>}></Route>
+        <Route path='/inventory/:inventoryId' element={<InventoryDetail></InventoryDetail>}></Route>
       </Routes>
       <ToastContainer />
     </div>

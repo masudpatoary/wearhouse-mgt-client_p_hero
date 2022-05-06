@@ -23,6 +23,19 @@ const NavBar = () => {
 
               {
                 user ?
+                  <>
+                    <Nav.Link eventKey="link-2" as={Link} to="inventories">Inventories</Nav.Link>
+                    <Nav.Link eventKey="link-3" as={Link} to="abc">abc</Nav.Link>
+                  </>
+                  :
+                  <>
+                    
+                  </>
+
+              }
+
+              {
+                user ?
                   <Button onClick={handleSignOut} variant={'primary'} className="ms-3">Log Out</Button>
                   :
                   <>

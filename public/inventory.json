@@ -1,120 +1,120 @@
 [
     {
         "name": "Air Filter",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/air-filter.jpg",
-        "description": "",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/air-filter.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 100,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
         "name": "Back Bumper",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/back-bumper.jpg",
-        "description": "",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/back-bumper.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 32000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "batteries",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/batteries.jpg",
-        "description": "",
+        "name": "Batteries",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/batteries.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 2000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "breaks",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/breaks.jpg",
-        "description": "",
+        "name": "Breaks",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/breaks.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 9000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "door",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/door.jpg",
-        "description": "",
+        "name": "Door",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/door.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 25000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "front-bumper",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/front-bumper.jpg",
-        "description": "",
+        "name": "Front-bumper",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/front-bumper.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 1400,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "gril",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/gril.jpg",
-        "description": "",
+        "name": "Gril",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/gril.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 2000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "head-light",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/head-light.jpg",
-        "description": "",
+        "name": "Head-light",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/head-light.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 8000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "oil-filter",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/oil-filter.jpg",
-        "description": "",
+        "name": "Oil-filter",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/oil-filter.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 1200,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "radiator",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/radiator.jpg",
-        "description": "",
+        "name": "Radiator",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/radiator.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 13000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "suspension",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/rr-suspension.jpg",
-        "description": "",
+        "name": "Suspension",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/rr-suspension.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 20000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "spark-plug",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/spark-plug.jpg",
-        "description": "",
+        "name": "Spark-plug",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/spark-plug.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 500,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "tail-light",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/tail-light.jpg",
-        "description": "",
+        "name": "Tail-light",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/tail-light.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 900,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "wheel-rim",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/wheel-rim.jpg",
-        "description": "",
+        "name": "Wheel-rim",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/wheel-rim.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
         "price": 23000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
     },
     {
-        "name": "windshield",
-        "img-url": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/windshield.jpg",
-        "description": "",
+        "name": "Windshield",
+        "imgUrl": "https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/products/windshield.jpg",
+        "description": "Lorem ipsum doller sit amet",
         "price": 50000,
         "quantity": 10,
         "supplier": "Rolls-Royce Motor Cars Limited"
