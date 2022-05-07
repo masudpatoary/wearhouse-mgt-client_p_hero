@@ -38,6 +38,7 @@ function App() {
           </RequireAuth>
         }>
         </Route>
+        <Route path='*' element={<div>Not Found</div>}></Route>
       </Routes>
       <ToastContainer />
     </div>

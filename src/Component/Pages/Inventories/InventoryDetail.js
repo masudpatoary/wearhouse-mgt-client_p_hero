@@ -1,12 +1,37 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { Col, Container, Row } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate, useLocation } from 'react-router-dom';
 import useDetail from '../../../Hooks/useDetail';
+import UseInventory from '../../../Hooks/UseInventory';
+import { toast } from 'react-toastify';
+
 
 const InventoryDetail = () => {
+    const navigate = useNavigate()
     const { inventoryId } = useParams();
     const [detail] = useDetail(inventoryId);
+    const [inventories, setInventories] = UseInventory();
+
+    const handleDelete = async id => {
+        console.log(id)
+        const proceed = window.confirm('Are you sure?');
+        if (proceed) {
+            const url = `http://localhost:5000/product/${id}`;
+            console.log(url)
+            await fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = inventories.filter(service => service._id !== id);
+                    setInventories(remaining);
+                })
+        }
+        navigate('/inventories');
+        toast(`successfully deleted ${detail.name}`)
+    }
 
     return (
         <Container className=' d-flex justify-content-center'>
@@ -23,14 +48,19 @@ const InventoryDetail = () => {
                         <h3>Description</h3>
                         <p>{detail.description}</p>
                         <Button variant='primary' className='my-2'>Update Stock</Button><br />
-                        <Button variant='primary' className='my-2'>Delete This Inventory</Button>
+
+                        <Button
+                            onClick={() => handleDelete(inventoryId)}
+                            variant='primary' className='my-2'>
+                            Delete This Inventory
+                        </Button>
                     </Col>
                 </Row>
                 <Row>
-                    
+
                 </Row>
             </Row>
-{/* 
+            {/* 
             <div className='py-1 px-2 mx-1 border my-2'>
 
             </div>
