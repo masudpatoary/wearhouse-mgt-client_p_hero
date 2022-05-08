@@ -8,7 +8,7 @@ const InventoriesForHome = () => {
     console.log(result)
     return (
         <div className='m-2 p-3 border border-secondary'>
-            <h3>These Inventories are running out of stock</h3>
+            <h3>Latest Added Inventories</h3>
             <div className=''>
                 {
                     result.map(inventoryForHome => <Inventory

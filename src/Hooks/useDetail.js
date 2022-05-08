@@ -8,9 +8,8 @@ const useDetail = inventoryId => {
         fetch(url)
         .then(res=>res.json())
         .then(data=>setDetail(data))
-        console.log(inventoryId)
       
-    }, [inventoryId])
+    }, [inventoryId, detail])
     
 
     return [detail, setDetail];

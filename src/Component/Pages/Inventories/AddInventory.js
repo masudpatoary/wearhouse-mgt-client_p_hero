@@ -18,7 +18,8 @@ const AddInventory = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                console.log('New inventory Successfully added', result);
+
             })
         toast('New inventory Successfully added')
         reset()

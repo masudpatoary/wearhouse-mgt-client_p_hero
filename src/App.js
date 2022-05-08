@@ -10,6 +10,7 @@ import InventoryDetail from './Component/Pages/Inventories/InventoryDetail';
 import AddInventory from './Component/Pages/Inventories/AddInventory';
 import RequireAuth from './Component/Authentication/RequireAuth/RequireAuth';
 import ManageInventories from './Component/Pages/Inventories/Inventories';
+import Footer from './Component/Pages/Footer/Footer';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path='*' element={<div>Not Found</div>}></Route>
       </Routes>
       <ToastContainer />
+      <Footer></Footer>
     </div>
   );
 }

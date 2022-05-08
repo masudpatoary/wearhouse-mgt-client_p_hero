@@ -10,18 +10,14 @@ import { toast } from 'react-toastify';
 const InventoryDetail = () => {
     const { inventoryId } = useParams();
     const [detail] = useDetail(inventoryId);
-    
+    const [inputQty, setInputQty] = useState()
     const navigate = useNavigate()
     const [inventories, setInventories] = UseInventory();
-    // console.log(detail)
-   
-    
-    const handleDelete = async id => {
 
+    const handleDelete = async id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
             const url = `http://localhost:5000/product/${id}`;
-            console.log(url)
             await fetch(url, {
                 method: 'DELETE'
             })
@@ -36,33 +32,43 @@ const InventoryDetail = () => {
         navigate('/inventories');
 
     }
-    let [updatedQty, setUpdatedQty] = useState(detail.quantity)
-    console.log( detail.quantity)
-    const handleUpdateQty = async() => {
-        let oldQty = parseInt(detail.quantity)
 
-        setUpdatedQty(++oldQty)
-        console.log(typeof (updatedQty), updatedQty)
-        console.log(typeof (oldQty), oldQty)
+    // const stockQty = async ()=>{
+    //     await setInputQty(detail.quantity)
+    //     console.log(inputQty)
+    // }
+    // stockQty()
+
+    const handleUpdateQty = async () => {
+        console.log(inputQty, 'inputQty')
         const url = `http://localhost:5000/product/${inventoryId}`;
         await fetch(url, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(updatedQty)
+            body: JSON.stringify({ quantity: inputQty })
         })
             .then(res => res.json())
             .then(data => {
-                console.log('success', data)
-                toast(`user added successfully ${data}`)
+                // console.log('success', data)
+                toast(`Inventory Stock Updated`)
             })
+
+    }
+
+    const handleDelivery = async ()=>{
+        let qty = parseFloat(detail.quantity)
+        let newQty =qty-1;
+        await setInputQty(newQty)
+        console.log(qty, newQty)
+        await handleUpdateQty()
     }
 
     return (
         <Container className=' d-flex justify-content-center'>
             <Row className='border border-secondary m-2 px-2 py-1 mx-auto'>
-                <h1>{detail.name}</h1>
+                <h1>Details of <q>{detail.name}</q></h1>
                 <Row>
                     <Col sm={12} md={6} >
                         <img src={detail.imgUrl} alt="" className='img-fluid' />
@@ -70,25 +76,39 @@ const InventoryDetail = () => {
                     <Col sm={12} md={6} >
                         <p>Price: ${parseFloat(detail.price)}</p>
                         <p>Quantity: {detail.quantity}</p>
-                        <p>Quantity: {updatedQty}</p>
                         <p>Supplier Name: {detail.supplier}</p>
                         <h3>Description</h3>
                         <p>{detail.description}</p>
-                        <form action="" className='d-flex align-items-center justify-content-center'>
-                            <input type="number" className='py-1' placeholder='Input stock number' />
-                            <input  className='my-2 btn btn-primary ms-3' type="submit" value='Add Stock' />
+                        <form
+
+                            action="" className='d-flex align-items-center justify-content-center'>
+                            <input onBlur={async e => {
+                                const inputValueInNumber = parseFloat(e.target.value)
+                                if (inputValueInNumber < 0 || NaN) {
+                                    // console.log(`Input a Valid Number`, inputValueInNumber)
+                                    toast(`Input a Valid Number`)
+                                }
+                                else {
+                                    await setInputQty(inputValueInNumber)
+                                }
+                            }}
+                                type="number" className='py-1' placeholder='Input stock number' />
+                            <Button onClick={handleUpdateQty} className='my-2 btn btn-primary ms-3' >Update Stock</Button>
                         </form>
-                        <Button onClick={handleUpdateQty}> add</Button>
-                        <Button
-                            onClick={() => handleDelete(inventoryId)}
-                            variant='primary' className='my-2'>
-                            Delete This Inventory
-                        </Button>
+
+                        <Row className='mt-3'>
+                            <Col>
+                                <Button
+                                    onClick={() => handleDelete(inventoryId)}
+                                    variant='primary' className='my-2'>
+                                    Delete This Inventory
+                                </Button>
+                                <Button onClick={handleDelivery} className='ms-4'>Delivered</Button>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
-                <Row>
 
-                </Row>
             </Row>
         </Container>
     )
