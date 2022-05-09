@@ -38,12 +38,16 @@ function App() {
             <AddInventory></AddInventory>
           </RequireAuth>}>
         </Route>
+
+        
+
+
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<div>Not Found</div>}></Route>
-      </Routes>
+      </Routes >
       <ToastContainer />
       <Footer></Footer>
-    </div>
+    </div >
   );
 }
 

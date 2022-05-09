@@ -5,7 +5,6 @@ import UseInventory from './../../../../Hooks/UseInventory';
 const OutOfStockInventory = () => {
     const [inventories] = UseInventory()
     const result = inventories.filter(item => (item.quantity <= 5))
-    console.log(result)
     return (
         <div className='m-2 p-3 border border-secondary '>
             <h3>These Inventories are running out of stock</h3>

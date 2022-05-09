@@ -5,7 +5,6 @@ import HomeInventory from '../Inventory/HomeInventory';
 const SampleHomeInventory = () => {
     const [inventories] = UseInventory()
     const result = inventories.slice(0,6)
-    console.log(result)
     return (
         <div className='m-2 p-3 border border-secondary'>
             <h3>Inventories</h3>

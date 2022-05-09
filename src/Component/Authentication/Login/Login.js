@@ -5,7 +5,6 @@ import { FcGoogle } from 'react-icons/fc';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { toast } from 'react-toastify';
 
 
 
@@ -28,8 +27,11 @@ const Login = () => {
         loading2,
         error2] = useSignInWithGoogle(auth);
     if (error1 || error2) {
-        toast('passward or email does not match')
-
+        return (
+            <div>
+                <p>Error: {error1.message || error2.message}</p>
+            </div>
+        );
     }
     if (loading1 || loading2) {
         return <Spinner animation="grow" variant="primary" />

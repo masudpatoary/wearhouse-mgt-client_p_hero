@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Spinner } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useAuthState, useCreateUserWithEmailAndPassword, useSendEmailVerification, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -8,7 +8,7 @@ import auth from '../../../firebase.init';
 
 
 const Register = () => {
-
+    const [user, loading] = useAuthState(auth);
     const location = useLocation();
     const navigate = useNavigate();
     let from = location.state?.from?.pathname || "/";
@@ -18,7 +18,7 @@ const Register = () => {
         setDisplayName] = useState('');
     const [
         updateProfile,
-        updating, 
+        updating1, 
         error1] = useUpdateProfile(auth);
     const [
         email,
@@ -28,12 +28,12 @@ const Register = () => {
         setPassword] = useState('');
     const [
         createUserWithEmailAndPassword,
-        user,
-        loading,
+        user2,
+        loading2,
         error2] = useCreateUserWithEmailAndPassword(auth);
     const [
         sendEmailVerification,
-        sending,
+        sending3,
         error3] = useSendEmailVerification(auth);
 
 
@@ -52,7 +52,7 @@ const Register = () => {
             </div>
         );
     }
-    if (loading || updating || sending) {
+    if (loading || loading2 || updating1 || sending3) {
         return <Spinner animation="grow" variant="primary" />
     }
 
@@ -89,6 +89,7 @@ const Register = () => {
                         type="button"
                         value="Register" />
                 </form>
+                
                 <div className=" mt-2  w-100 fw-bold border-top border-1 border-dark">Have An Account <Link  className='text-primary  text-decoration-none' to="/login">Log In</Link></div>
             </div>
         </div>
