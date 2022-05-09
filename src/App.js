@@ -11,11 +11,12 @@ import AddInventory from './Component/Pages/Inventories/AddInventory';
 import RequireAuth from './Component/Authentication/RequireAuth/RequireAuth';
 import ManageInventories from './Component/Pages/Inventories/Inventories';
 import Footer from './Component/Pages/Footer/Footer';
+import Blogs from './Component/Pages/Blogs/Blogs';
 
 
 function App() {
   return (
-    <div className="App mx-auto">
+    <div className="App d-flex flex-column min-vh-100">
       <NavBar></NavBar>
       <Routes>
         <Route path='/' element={<HomePage></HomePage>}></Route>
@@ -37,6 +38,7 @@ function App() {
             <AddInventory></AddInventory>
           </RequireAuth>}>
         </Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<div>Not Found</div>}></Route>
       </Routes>
       <ToastContainer />

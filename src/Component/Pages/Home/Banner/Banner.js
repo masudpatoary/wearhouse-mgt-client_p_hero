@@ -8,7 +8,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/hotel-images/banner-1.jpg"
+                        src="https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/banner/banner-1.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -19,7 +19,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/hotel-images/banner-2.jpg"
+                        src="https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/banner/banner-2.jpg"
                         alt="Second slide"
                     />
 
@@ -31,7 +31,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/hotel-images/banner-3.jpg"
+                        src="https://raw.githubusercontent.com/masudpatoary/lucky-1/main-1/Images-for-rolls-royce-spare-parts/banner/banner-4.jpg"
                         alt="Third slide"
                     />
 

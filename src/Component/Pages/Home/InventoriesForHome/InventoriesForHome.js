@@ -1,6 +1,6 @@
 import React from 'react';
 import UseInventory from '../../../../Hooks/UseInventory';
-import Inventory from '../../Inventories/Inventory';
+import HomeInventory from '../Inventory/HomeInventory';
 
 const InventoriesForHome = () => {
     const [inventories] = UseInventory()
@@ -9,9 +9,9 @@ const InventoriesForHome = () => {
     return (
         <div className='m-2 p-3 border border-secondary'>
             <h3>Latest Added Inventories</h3>
-            <div className=''>
+            <div className='d-flex flex-wrap justify-content-center align-content-center'>
                 {
-                    result.map(inventoryForHome => <Inventory
+                    result.map(inventoryForHome => <HomeInventory
                         key={inventoryForHome._id}
                         id={inventoryForHome._id}
                         img={inventoryForHome.imgUrl}
@@ -19,7 +19,7 @@ const InventoriesForHome = () => {
                         quantity={inventoryForHome.quantity}
                         price={inventoryForHome.price}
                         supplier={inventoryForHome.supplier}
-                    ></Inventory>)
+                    ></HomeInventory>)
                 }
             </div>
         </div>

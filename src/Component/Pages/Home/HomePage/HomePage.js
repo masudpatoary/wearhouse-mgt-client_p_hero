@@ -1,7 +1,7 @@
 import React from 'react';
 import OutOfStockInventory from '../OutOfStockInventory/OutOfStockInventory';
 import Banner from './../Banner/Banner';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row,  Container } from 'react-bootstrap';
 import InventoriesForHome from './../InventoriesForHome/InventoriesForHome';
 
 const HomePage = () => {
