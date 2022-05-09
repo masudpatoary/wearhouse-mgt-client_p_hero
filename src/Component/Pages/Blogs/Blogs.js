@@ -71,8 +71,20 @@ const Blogs = () => {
                 <h1 className='text-4xl font-bold'>
                     Purpose of JWT
                 </h1>
-                <p className='text-xl'>
-                    lorem
+                <p className='text-xl text-start'>
+                    JWT is called JSON Web Tokens.
+                    <ul>
+                        <li>
+                            <p><b>Authorization</b></p>
+                            <p>JWT allows the user to access such as routes, services, and resources that are permitted with a token.</p>
+                        </li>
+                        <li>
+                            <p>
+                                <p><b>Information Exchange</b></p>
+                                <p>It secure the transmission of information between server and client site.</p>
+                            </p>
+                        </li>
+                    </ul>
                 </p>
 
             </div>
