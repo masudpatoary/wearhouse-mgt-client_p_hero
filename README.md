@@ -1,6 +1,6 @@
 # Project Name: [Core Inventory](https://core-inventory-beaa1.web.app/)
 # Project Name: [Core Inventory](https://core-inventory-beaa1.firebaseapp.com/)
-# Database Server the Project: [Space Analysis](https://pure-fjord-01730.herokuapp.com/)
+# Database Server the Project: [Core Inventory](https://pure-fjord-01730.herokuapp.com/)
 
 
 ### This project is Customized with
