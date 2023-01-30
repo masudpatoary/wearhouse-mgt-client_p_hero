@@ -9,7 +9,7 @@ const AddInventory = () => {
     const onSubmit = async data => {
         console.log(data);
         console.log(register);
-        await fetch('https://pure-fjord-01730.herokuapp.com/product', {
+        await fetch('https://core-inventory.onrender.com/product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

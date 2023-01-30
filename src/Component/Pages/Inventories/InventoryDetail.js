@@ -17,7 +17,7 @@ const InventoryDetail = () => {
     const handleDelete = async id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `https://pure-fjord-01730.herokuapp.com/product/${id}`;
+            const url = `https://core-inventory.onrender.com/product/${id}`;
             await fetch(url, {
                 method: 'DELETE'
             })
@@ -41,7 +41,7 @@ const InventoryDetail = () => {
 
     const handleUpdateQty = async () => {
         console.log(inputQty, 'inputQty')
-        const url = `https://pure-fjord-01730.herokuapp.com/product/${inventoryId}`;
+        const url = `https://core-inventory.onrender.com/product/${inventoryId}`;
         await fetch(url, {
             method: 'PUT',
             headers: {
